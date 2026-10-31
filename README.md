@@ -10,7 +10,7 @@ ROS 2 Humble と Ignition Gazebo 6 を使ったシミュレーションのシス
 |---|---|
 | ファイル名 | `ros2 camera diag.mp4`（1分04秒、1280×720、H.264） |
 | 内容 | 最終実験（ラン `slalom_final5`）の録画。文字カードなし、シミュレーション時間と等倍 |
-| YouTube URL | （未定：公開後に記入） |
+| YouTube URL | https://youtu.be/BOf0Lz1CN_0 |
 
 動画ファイルはこのリポジトリに含めていません。
 
