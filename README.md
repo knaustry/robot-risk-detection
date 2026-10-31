@@ -4,6 +4,10 @@ ROS 2 Humble と Ignition Gazebo 6 を使ったシミュレーションのシス
 
 最終実験では、障害物3個と横切る人を配置したスラローム環境で、目標地点への到達を確認しました。
 
+## 提出リポジトリ
+
+https://github.com/knaustry/robot-risk-detection
+
 ## 提出動画
 
 | 項目 | 内容 |
