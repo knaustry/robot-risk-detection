@@ -1,0 +1,5 @@
+world: /workspace/robot_risk_office_slalom.sdf
+[start] gazebo pid 57160
+[start] bridge_cam pid 57238
+[start] bridge pid 57239
+[start] posebridge pid 57240

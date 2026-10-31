@@ -1,0 +1,1 @@
+final GT=(5.74,-0.56) yaw=22 sim_t=0.0 min_clearance=0.268 m to obstacle_2 states={None: 2, 'OBSTACLE_FAR': 102, 'APPROACHING': 464, 'STOP': 89, 'PERSON': 3} sim_duration=59.2

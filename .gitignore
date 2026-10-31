@@ -1,0 +1,75 @@
+# Allow-list: everything at the repository root is ignored unless listed below.
+/*
+
+# --- general (applies everywhere) -------------------------------------------
+__pycache__/
+*.pyc
+.DS_Store
+*.mp4
+
+# --- repository root --------------------------------------------------------
+!/.gitignore
+!/README.md
+!/CLONE_VERIFICATION.md
+!/run_pai_container.sh
+!/robot_risk_world.sdf
+!/robot_risk_office.sdf
+!/robot_risk_office_slalom.sdf
+!/report_materials/
+!/risk_system/
+
+# --- risk_system: only the listed files ---------------------------------------
+/risk_system/*
+# documents
+!/risk_system/SLALOM_RESULTS.md
+!/risk_system/REPORT.md
+# start-up
+!/risk_system/common.sh
+!/risk_system/start_sim.sh
+!/risk_system/start_nodes.sh
+!/risk_system/run_slalom.sh
+!/risk_system/stop_all.sh
+!/risk_system/status.sh
+# recognition, risk and control
+!/risk_system/risk_core.py
+!/risk_system/robot_risk_detector.py
+!/risk_system/robot_risk_safety_controller.py
+!/risk_system/robot_risk_cmd_watchdog.py
+# scenario and recording
+!/risk_system/demo_walk_scenario.py
+!/risk_system/pose_client.cpp
+!/risk_system/run_logger.py
+!/risk_system/robot_risk_recorder.py
+# world generation and scene data
+!/risk_system/make_office_world.py
+!/risk_system/make_office_slalom_world.py
+!/risk_system/scene_slalom.json
+# measurement and test tools
+!/risk_system/gt_pose.py
+!/risk_system/grab_frame.py
+!/risk_system/topic_stamps.py
+!/risk_system/slalom_timeline.py
+!/risk_system/test_speed_metrics.py
+!/risk_system/test_faults.py
+!/risk_system/test_detection_sweep.py
+!/risk_system/test_offline_invalid.py
+!/risk_system/offline_test.py
+# input frame used by test_offline_invalid.py
+!/risk_system/snap_v2_start.png
+
+# --- risk_system/logs: results cited by the documents only ----------------------
+!/risk_system/logs/
+/risk_system/logs/*
+!/risk_system/logs/slalom_final5.csv
+!/risk_system/logs/slalom_final5.summary.txt
+!/risk_system/logs/slalom_final5.controller.log
+!/risk_system/logs/slalom_final5.scenario.log
+!/risk_system/logs/slalom_runs.txt
+!/risk_system/logs/slalom_speed_metrics.txt
+!/risk_system/logs/slalom_fault_tests.txt
+!/risk_system/logs/office_detection_sweep.csv
+!/risk_system/logs/office_fault_tests.txt
+!/risk_system/logs/plainworld_detection_sweep_newdetector.csv
+!/risk_system/logs/motion_test3_gt.txt
+!/risk_system/logs/motion_test3_odom.txt
+!/risk_system/logs/start_sim_last.txt

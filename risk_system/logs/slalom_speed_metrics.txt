@@ -1,0 +1,11 @@
+A brake v=0.15: travelled 0.59 m, stop distance 0.003 m, settle 1.0162851810455322 s wall, |pitch| max drive 0.77 brake 0.77 deg
+A brake v=0.3: travelled 1.13 m, stop distance 0.011 m, settle 1.0134732723236084 s wall, |pitch| max drive 0.98 brake 0.77 deg
+A brake v=0.3: travelled 1.13 m, stop distance 0.010 m, settle 1.0110201835632324 s wall, |pitch| max drive 0.97 brake 0.92 deg
+A brake v=0.3: travelled 1.12 m, stop distance 0.011 m, settle 1.0126550197601318 s wall, |pitch| max drive 0.84 brake 0.84 deg
+A brake v=0.4: travelled 1.48 m, stop distance 0.022 m, settle 1.0148658752441406 s wall, |pitch| max drive 1.02 brake 1.14 deg
+B detection 0: before=OBSTACLE_FAR -> STOP in 256 ms wall, 132 ms sim (includes frame interval), proc 56.2 ms
+B detection 1: before=OBSTACLE_FAR -> STOP in 378 ms wall, 198 ms sim (includes frame interval), proc 47.6 ms
+B detection 2: before=OBSTACLE_FAR -> STOP in 220 ms wall, 132 ms sim (includes frame interval), proc 55.3 ms
+B detection 3: before=OBSTACLE_FAR -> STOP in 379 ms wall, 330 ms sim (includes frame interval), proc 50.7 ms
+B detection 4: before=OBSTACLE_FAR -> STOP in 410 ms wall, 198 ms sim (includes frame interval), proc 56.9 ms
+B detection 5: before=OBSTACLE_FAR -> STOP in 153 ms wall, 133 ms sim (includes frame interval), proc 64.9 ms

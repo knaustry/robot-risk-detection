@@ -1,0 +1,6 @@
+end forward    cmd v=0.1 w=0.0  odom {"x": 0.156, "y": -0.0, "yaw": -0.0, "v": 0.1, "w": 0.0}
+end stop       cmd v=0 w=0  odom {"x": 0.156, "y": -0.0, "yaw": -0.0, "v": 0.0, "w": 0.0}
+end turn_left  cmd v=0 w=0.3  odom {"x": 0.156, "y": -0.0, "yaw": 42.594, "v": 0.0, "w": 0.3}
+end stop       cmd v=0 w=0  odom {"x": 0.156, "y": -0.0, "yaw": 42.628, "v": 0.0, "w": 0.0}
+end turn_right cmd v=0 w=-0.3  odom {"x": 0.156, "y": -0.0, "yaw": -0.636, "v": 0.0, "w": -0.3}
+end stop       cmd v=0 w=0  odom {"x": 0.156, "y": -0.0, "yaw": -0.67, "v": 0.0, "w": 0.0}

@@ -1,0 +1,10 @@
+[INFO] [1793399112.158833882] [robot_risk_safety_controller]: goal (relative to start) = (11.0, -0.4) v_max=0.3
+[INFO] [1793399112.194414882] [robot_risk_safety_controller]: start odom (-0.00,-0.00,0deg) -> goal odom (11.00,-0.40)
+[INFO] [1793399127.242451500] [robot_risk_safety_controller]: detour right: obstacle ~2.02 m, edges [+0.95,+0.11] -> wps [(3.2720194487232432, -0.6564246636145558), (4.471210423520176, -0.7004815128616759)]
+[INFO] [1793399168.741830756] [robot_risk_safety_controller]: detour complete -> goal
+[INFO] [1793399168.748225047] [robot_risk_safety_controller]: detour left: obstacle ~1.50 m, edges [+0.07,-0.50] -> wps [(5.8863988538775684, -0.029934429933750506), (7.085653928876203, -0.07221048805202035)]
+[INFO] [1793399198.142900297] [robot_risk_safety_controller]: person cleared -> resume
+[INFO] [1793399224.146021920] [robot_risk_safety_controller]: detour right: obstacle ~1.24 m, edges [+0.71,+0.45] -> wps [(9.522698551848295, -0.4940975832292249), (10.719597002315123, -0.5803188060813026)]
+[INFO] [1793399247.552423000] [robot_risk_safety_controller]: detour complete -> goal
+[INFO] [1793399250.937915335] [robot_risk_safety_controller]: goal reached at odom (10.74,-0.53)
+[INFO] [1793399258.241769172] [robot_risk_safety_controller]: controller exit: zero velocity sent

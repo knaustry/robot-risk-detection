@@ -1,0 +1,7 @@
+T4 normal driving: GT speed 0.066 m/s (sim-time rate x RTF), state=OBSTACLE_FAR risk=16.3 cmd v=0.15 reason=normal -> PASS
+T9a detector SIGKILL at GT speed 0.064 m/s: standstill after 2.5079638957977295 s (wall), coasted 0.105 m, controller reason='SAFETY risk_state timeout' -> PASS
+T9b detector restarted: GT speed 0.064 m/s, reason='normal' -> PASS
+T9c camera bridge stopped at GT speed 0.066 m/s: standstill after 2.0081629753112793 s, coasted 0.061 m, risk reason='camera timeout (2.6s)', ctrl='SAFETY camera invalid: camera timeout (2.6s)' -> PASS
+     camera bridge restarted: GT speed 0.051 m/s, state=APPROACHING
+T9d controller SIGKILL at GT speed 0.050 m/s: standstill after 1.508347988128662 s, coasted 0.030 m -> PASS; watchdog log: [WARN] [1792333110.898044132] [robot_risk_cmd_watchdog]: cmd_vel silent while moving -> zero velocity sent
+RESULTS {'T4': True, 'T9a': True, 'T9b': True, 'T9c': True, 'T9d': True}

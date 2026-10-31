@@ -1,0 +1,1 @@
+samples=1132 first=(-3.500,0.000) last=(-3.344,-0.000,yaw -0.7) pitch[min -0.78 max 0.77] roll[min -0.00 max 0.00] z[min -0.0000 max 0.0001]

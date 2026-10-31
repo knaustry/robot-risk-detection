@@ -1,0 +1,28 @@
+PARAMS try1 GOAL=11.2 TRIG=4.5 WALK=0.6 V_MAX=0.30 V_DETOUR=0.22 V_PERSON=0.12 V_MIN=0.12 V_PASS=0.15 W_TURN=0.6 W_MAX=0.7 SIDE_LAT=1.0
+try1: INVALID, run_logger.py syntax error (my edit); controller stopped at once, no motion test
+PARAMS try2 GOAL=11.2 TRIG=4.5 WALK=0.6 V_MAX=0.30 V_DETOUR=0.22 V_PERSON=0.12 V_MIN=0.12 V_PASS=0.15 W_TURN=0.6 W_MAX=0.7 SIDE_LAT=1.0
+try2: FAILED safe - false person label at first obstacle -> WAIT_PERSON forever (robot stationary at x=-3.75), timeout
+PARAMS try3 GOAL=11.2 TRIG=4.5 WALK=0.6 V_MAX=0.30 V_DETOUR=0.22 V_PERSON=0.12 V_MIN=0.12 V_PASS=0.15 W_TURN=0.6 W_MAX=0.7 SIDE_LAT=1.0
+try3: FAILED safe - passed obstacle_1/2 (min clearance 0.213 m) but B taken on wall side, then stalled at x=3.6: detour planned around far object instead of the STOP cause; person crossed too early
+PARAMS try4 GOAL=11.2 TRIG=5.8 WALK=0.6 V_MAX=0.30 V_DETOUR=0.22 V_PERSON=0.12 V_MIN=0.12 V_PASS=0.20 W_TURN=0.6 W_MAX=0.7 SIDE_LAT=1.0
+final GT=(5.99,-0.26) yaw=45 sim_t=0.0 min_clearance=-0.022 m to obstacle_2 states={None: 2, 'OBSTACLE_FAR': 106, 'APPROACHING': 443, 'STOP': 216, 'PERSON': 2} sim_duration=83.3
+try4: REJECTED - clearance -0.022 m to obstacle_2 (circle model, effectively contact) after turning toward goal with the obstacle outside the camera view; reached goal in 74 s sim
+PARAMS try5 GOAL=11.2 TRIG=5.0 WALK=0.5 V_MAX=0.30 V_DETOUR=0.22 V_PERSON=0.12 V_MIN=0.12 V_PASS=0.20 W_TURN=0.6 W_MAX=0.7 SIDE_LAT=1.0 DEPTH=1.3 MEMORY=on
+final GT=(6.05,-0.34) yaw=61 sim_t=0.0 min_clearance=0.310 m to obstacle_2 states={None: 1, 'OBSTACLE_FAR': 116, 'APPROACHING': 490, 'STOP': 118} sim_duration=76.2
+try5: SUCCESS (not recorded) - slalom R/L/R, clearance 0.31 m, pitch 0.77 deg, goal; person wait only ~1.5 s, length ~76 s, turn in place at the end
+PARAMS try6 GOAL=11.0 GOAL_Y=-0.4 HOLD=1.0 TRIG=5.0 WALK=0.5 V_MAX=0.30 V_DETOUR=0.25 V_PERSON=0.12 V_MIN=0.15 V_PASS=0.22 W_TURN=0.6 W_MAX=0.7 SIDE_LAT=1.0 DEPTH=1.0 MEMORY=on
+final GT=(5.73,-0.58) yaw=21 sim_t=0.0 min_clearance=0.255 m to obstacle_2 states={'OBSTACLE_FAR': 116, 'APPROACHING': 424, 'STOP': 90} sim_duration=58.0
+try6: SUCCESS (not recorded) - 58 s sim, clearance 0.255 m, pitch 0.84 deg
+PARAMS final1 GOAL=11.0 GOAL_Y=-0.4 HOLD=1.0 TRIG=5.0 WALK=0.5 V_MAX=0.30 V_DETOUR=0.25 V_PERSON=0.12 V_MIN=0.15 V_PASS=0.22 W_TURN=0.6 W_MAX=0.7 SIDE_LAT=1.0 DEPTH=1.0 MEMORY=on
+final1: INVALID - my duplicate check matched its own command line; Gazebo did not start, 0 frames, no motion
+PARAMS final2 GOAL=11.0 GOAL_Y=-0.4 HOLD=1.0 TRIG=5.0 WALK=0.5 V_MAX=0.30 V_DETOUR=0.25 V_PERSON=0.12 V_MIN=0.15 V_PASS=0.22 W_TURN=0.6 W_MAX=0.7 SIDE_LAT=1.0 DEPTH=1.0 MEMORY=on
+final2: INVALID - my 'head -2' pipe killed start_sim.sh before bridges started; 0 frames, no motion
+PARAMS final3 GOAL=11.0 GOAL_Y=-0.4 HOLD=1.0 TRIG=5.0 WALK=0.5 V_MAX=0.30 V_DETOUR=0.25 V_PERSON=0.12 V_MIN=0.15 V_PASS=0.22 W_TURN=0.6 W_MAX=0.7 SIDE_LAT=1.0 DEPTH=1.0 MEMORY=on
+final GT=(5.73,-0.57) yaw=21 sim_t=0.0 min_clearance=0.254 m to obstacle_2 states={None: 1, 'OBSTACLE_FAR': 143, 'APPROACHING': 499, 'STOP': 102} sim_duration=69.2
+final3: SUCCESS, recorded (58.1 s, just under target) - clearance 0.254 m, pitch 0.80 deg. Logger 'sim_duration=69.2' was wrong (first row stamp 0); true 57.6 s
+PARAMS final4 GOAL=11.0 GOAL_Y=-0.4 HOLD=1.0 TRIG=5.0 WALK=0.4 V_MAX=0.30 V_DETOUR=0.25 V_PERSON=0.12 V_MIN=0.15 V_PASS=0.22 W_TURN=0.6 W_MAX=0.7 SIDE_LAT=1.0 DEPTH=1.0 MEMORY=on
+final GT=(5.73,-0.60) yaw=20 sim_t=0.0 min_clearance=0.249 m to obstacle_2 states={'OBSTACLE_FAR': 113, 'APPROACHING': 453, 'STOP': 93, 'PERSON': 2} sim_duration=57.8
+final4: SUCCESS but REJECTED for video - 62.4 s, clearance 0.249 m; robot resumed while person still near path (person mislabelled obstacle up close); graph axis clipped at 0.2 m/s
+PARAMS final5 GOAL=11.0 GOAL_Y=-0.4 HOLD=1.0 TRIG=5.0 WALK=0.4 V_MAX=0.30 V_DETOUR=0.25 V_PERSON=0.12 V_MIN=0.15 V_PASS=0.22 W_TURN=0.6 W_MAX=0.7 SIDE_LAT=1.0 DEPTH=1.0 MEMORY=on
+final GT=(5.74,-0.56) yaw=22 sim_t=0.0 min_clearance=0.268 m to obstacle_2 states={None: 2, 'OBSTACLE_FAR': 102, 'APPROACHING': 464, 'STOP': 89, 'PERSON': 3} sim_duration=59.2
+final5: SUCCESS, ADOPTED - 64.4 s video, drive 59.2 s, clearance 0.268 m, pitch 0.78 deg, person wait 2.9 s
